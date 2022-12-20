@@ -2,16 +2,24 @@ import React from 'react';
 import goodwill from '../../assets/resale.png';
 import coding from '../../assets/codinghub.png';
 import kids from '../../assets/kidsplay.png';
+import moment from '../../assets/moment.png';
+import news from '../../assets/news.png';
+import speed from '../../assets/speed.png';
+import quizy from '../../assets/quizy.png';
+import football from '../../assets/football.png';
 import './Project.css'
 
 
 const Project = () => {
   const projects = [
     {id: 1, name: 'good-will Store', img: goodwill, link : 'https://goodwill-store.web.app/'},
-    {id: 2, name: 'CODING HUB', img: coding},
-    {id: 3, name: 'Kids Play Zone', img: kids},
-    {id: 4, name: 'Kids Play Zone', img: kids},
-    {id: 5, name: 'Kids Play Zone', img: kids}
+    {id: 2, name: 'CODING HUB', img: coding, link: 'https://coding-hub-51f12.web.app/'},
+    {id: 3, name: 'Kids Play Zone', img: kids, link: 'https://timely-meerkat-fec5df.netlify.app/'},
+    {id: 4, name: 'MOMENT US', img: moment, link: 'https://moment-us-86884.web.app/'},
+    {id: 5, name: 'CRACK QUIzZy', img: quizy, link: 'https://clever-sprinkles-edcf66.netlify.app/home'},
+    {id: 6, name: 'Daily News', img: news, link: 'https://spectacular-pudding-77cd71.netlify.app/'},
+    {id: 7, name: 'Speed Typer', img: speed, link: 'https://dulcet-empanada-bdff32.netlify.app/'},
+    {id: 8 , name: 'Start Your Football Team', img: football, link: 'https://scintillating-puffpuff-19bd7f.netlify.app/'},
   ]
     return (
       <div className="grid grid-cols-3  w-10/12 mx-auto gap-5" id='projects'>
