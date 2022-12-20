@@ -1,0 +1,7 @@
+.wrapper{
+    display:grid;
+    height:50vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    place-items:center
+  }
