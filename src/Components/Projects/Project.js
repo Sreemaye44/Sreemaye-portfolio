@@ -61,34 +61,38 @@ const Project = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3  w-10/12 mx-auto gap-5" id="projects">
-      {projects.map((project) => (
-        <div className=" bg-white bg-opacity-5 backdrop-blur-lg drop-shadow-lg wrapper antialiased text-gray-900">
-          <div>
-            <img
-              src={project.img}
-              alt=" random imgee"
-              className="w-96 h-56 object-cover object-center rounded-lg shadow-md"
-            />
+    <div>
+      <h2 className="text-4xl font-semibold text-fuchsia-500 mb-10">
+        Personal Projects
+      </h2>
+      <div className="grid grid-cols-3  w-10/12 mx-auto gap-5" id="projects">
+        {projects.map((project) => (
+          <div className=" bg-white bg-opacity-5 backdrop-blur-lg drop-shadow-lg wrapper antialiased text-gray-900">
+            <div>
+              <img
+                src={project.img}
+                alt=" random imgee"
+                className="w-96 h-56 object-cover object-center rounded-lg shadow-md"
+              />
 
-            <div className="relative px-4 -mt-16  ">
-              <div className="bg-teal-500  p-6 rounded-lg shadow-lg">
-                <div className="flex items-baseline">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide"
-                  >
-                    Live{" "}
-                  </a>
-                </div>
+              <div className="relative px-4 -mt-16  ">
+                <div className="bg-teal-500  p-6 rounded-lg shadow-lg">
+                  <div className="flex items-baseline">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide"
+                    >
+                      Live{" "}
+                    </a>
+                  </div>
 
-                <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                  {project.name}
-                </h4>
+                  <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
+                    {project.name}
+                  </h4>
 
-                {/* <div className="mt-1">
+                  {/* <div className="mt-1">
     $1800
     <span className="text-gray-600 text-sm">   /wk</span>
   </div>
@@ -96,11 +100,12 @@ const Project = () => {
     <span className="text-teal-600 text-md font-semibold">4/5 ratings </span>
     <span className="text-sm text-gray-600">(based on 234 ratings)</span>
   </div>   */}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

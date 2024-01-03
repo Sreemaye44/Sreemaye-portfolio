@@ -5,6 +5,7 @@ import ContactOption from "../Contact/ContactOption";
 import Navbar from "../Navbar/Navbar";
 import Project from "../Projects/Project";
 import SkillBar from "../SkillBar/SkillBar";
+import Experience from "../Experience/Experience";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       </div>
       <div>
         <Banner></Banner>
+        <Experience></Experience>
         <SkillBar></SkillBar>
         <Project></Project>
         <ContactOption></ContactOption>
